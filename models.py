@@ -1,4 +1,3 @@
-
 from sqlalchemy import (
     Table,
     Column,
@@ -56,7 +55,7 @@ product_size_relationship = relationship("size", secondary=product_sizes, backre
 vendor = Table(
     'vendor',
     metadata,
-    Column('id', primary_key=True, autoincrement=True),
+    Column('id', Integer, primary_key=True, autoincrement=True),
     Column('name', String),
     Column('image', String)
 )
@@ -64,7 +63,7 @@ vendor = Table(
 brand = Table(
     'brand',
     metadata,
-    Column('id', primary_key=True, autoincrement=True),
+    Column('id', Integer, primary_key=True, autoincrement=True),
     Column('name', String),
     Column('image', String)
 )
