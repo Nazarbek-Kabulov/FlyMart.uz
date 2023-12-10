@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get('/')
 def get():
-    return {'message': 'FlyMart.uz clone'}
+    return {'message': 'FlyMart clone'}
